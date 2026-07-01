@@ -1,0 +1,27 @@
+html{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main{
+    background-color: grey;
+    color: white;
+    padding: 1em;
+}
+article{
+    outline: 5px solid black;
+    padding: 1em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
