@@ -3,33 +3,41 @@ html{
 }
 
 nav{
-    li{
+
+    ul{
         list-style-type: none;
-        font-size: 20px;
-        text-align: left;
-        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: clamp(6px, 2vw, 24px);
+    }
+    li{
+        font-size: clamp(14px, 2vw, 20px);
+        text-align: center;
         margin: 2px;
     }
-    a:link{
+    a:link, a:visited, a:active{
         color: white;
+        text-decoration: none;
     }
-    a:active{
-        color: white; 
-    }
-    a:visited{
-        color: white;
-    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 
     background-color: #222222;
     border-radius: 50px;
-    outline: 5px solid #169976; 
+    outline: 5px solid #169976;
     color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: -4%;
-    padding: 2px;
-    width: 90%;
+
     position: fixed;
+    left: 5%;
+    right: 5%;
+    margin-top: -4%;
+    padding: 10px clamp(10px, 3vw, 40px);
+    box-sizing: border-box;
 }
 
 header{
