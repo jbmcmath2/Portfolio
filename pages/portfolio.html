@@ -39,16 +39,103 @@
                 <p>This is a project</p>
             </article>
             <article>
-                <h1>Project Title</h1>
-                <h2>Date</h2>
+                <h1>CAVEViewer</h1>
+                <h2>May 2025</h2>
                 <img alt="Project image">
-                <p>This is a project</p>
+                <p>
+                    The CAVEViewer was a series of projects focused on turning the Emerging Analytics Center’s (EAC) 360 
+                    tour projects into CAVE applications and creating a template for future tour ports to the CAVE. This 
+                    project specifically targeted making a CAVE tour of the Trojan Way and Alumni Brick Path, walkways at 
+                    the University of Arkansas at Little Rock, which at the time was recently renovated. 
+                </p>
+                <p>
+                    To make the application, I used <b>Unity Game Engine</b>, and <b>MiddleVR</b> packages to handle the 
+                    cluster rendering for the CAVE. I managed the project using <b>Jira</b>, and used 
+                    <b>Sourcetree/Bitbucket</b> for source control. A <b>Insta360Pro</b> camera was used to capture the 
+                    Trojan Way and Alumni pathways.
+                </p>
+                <p>
+                    The final project included a Google Maps like interaction scheme, where users could direct themselves 
+                    up and down the pathway using arrow buttons on the floor. A map of the pathway that tracks the user’s 
+                    position and teleports to selected sections of the pathway. The application also includes features such 
+                    as ambient audio, auto rotate and a hide UI option. 
+                </p>
+                <p>
+                    During and after development of the CAVEViewer, the directional buttons were often an issue, as the 
+                    multi-cluster renderer packages of MiddleVR did not work nicely with spawning UI elements to create the 
+                    Google maps-like interactions. I instead had to constantly hide and retool existing buttons to work with 
+                    new environments that the user would move too. This created quite a few issues during development, where 
+                    I needed to constantly go back and make minor tweaks to button placements and store their positions.
+                </p>
+                <p>
+                    In future works, I would ideally find a way of making graphing tools like Digital Salmon’s Complete 360 
+                    packages, which allow for developers to make marks on the panoramic images to dictate where 
+                    a UI element would be placed. However, for the scope of the project, this was more work than what was 
+                    needed at the time, and would have been a significant time sink. Additionally, while I did keep many 
+                    features as modular as I could, there came a time where some features needed to be tied to other features 
+                    to ensure they synced up, which in future works would not be required.
+                </p>
+                <p>
+                    Working on this project, and the creation of the template, I learned a lot about setting up modular 
+                    features, and how to best set-up scriptable objects within Unity projects. I learned a lot about 
+                    MiddleVR and multi-cluster rendering generally, and learned a lot about good UI practices within 3D 
+                    environments. 
+                </p>
+                <p>
+                    This project resulted in a CAVEViewer template being established for future 360 tour projects. The 
+                    creation of two CAVE applications used for promoting features of the university's campus, as well as 
+                    standardizing floor buttons within future EAC projects.
+                </p>
             </article>
-            <article>
-                <h1>Project Title</h1>
-                <h2>Date</h2>
+            <article id="ChemicalBeach">
+                <h1>Chemical Beach</h1>
+                <h2>October 2024</h2>
                 <img alt="Project image">
-                <p>This is a project</p>
+                <p>
+                    In partnership with the Department of Defenses’ outreach program Starbase, and the Forge Institute, 
+                    the Emerging Analytics Center (EAC) was asked to create a series of applications and set up a version 
+                    of our Immersive Corner, a VR environment. In this I was tasked with making a VR scavenger hunt game, 
+                    meant to be used as an educational piece to help teach chemistry topics based on another game they have 
+                    called “Happy Atoms”
+                </p>
+                <p>
+                    To create this application, I utilized <b>Unity Game Engine</b> and maintained project management through 
+                    <b>Jira</b>, maintained code through <b>Sourcetree</b> and <b>Bitbucket</b> and created project 
+                    documentation using <b>Confluence</b>. Throughout the development of Chemical Beach, the Agile workflow 
+                    methodology was utilized.
+                </p>
+                <p>
+                    When Chemical Beach’s development was completed, the game included various items to find, with chemistry 
+                    facts included, allowing the user to interact with the molecule. A stylized cloud generator, a directional 
+                    arrow to make the scavenger hunt easier for younger users, and a simple player controller with controls 
+                    for both keyboard/mouse and controller set-ups.
+                </p>
+                <p>
+                    In developing Chemical Beach, figuring out good cloud generation proved to be quite a challenge, as early 
+                    versions of shaders were used, and particle effects had a variety of issues, from being inefficient 
+                    performatively, to not generating enough clouds. In the end, using a simple cloud png, and layering 
+                    them on top of each other, with a variable spin, size and texture noise created an ideal generation, 
+                    which was commented as being “Miyazaki-like.” 
+                </p>
+                <p>
+                    During this project, I learned a lot about developing for non-standard platforms, as we had to create 
+                    functionalities for a game that existed on more than one screen at a time. Where at first I created 
+                    methods for a dual monitor set-up, then later retrofitted functionalities for a Nvidia mosaic mode 
+                    setting. This project also taught me more about particle systems when creating the cloud generator. 
+                    Chemical Beach has also taught me a lot about level and environment design, and how to place objects 
+                    in an environment in an effective manner, and create a memorable scene for users. 
+                </p>
+                <p>
+                    This project also taught me a lot about project management, as I worked on managing the Jira board and 
+                    tasks for developers and artists. Learning not only how to develop applications but also manage people 
+                    in an Agile workflow.
+                </p>
+                <p>
+                    The resulting project was a fun scavenger hunt, utilizing the immersive corner’s VR setting to its 
+                    advantage, creating a fun way of teaching chemistry topics to young learners. This project was one of the 
+                    first major projects I did most of the management on, helping to build my skills not only in development, 
+                    but also organizing large projects among several other project teammates. 
+                </p>
             </article>
             <article id="OilTerrain">
                 <h1>Oil Terrain</h1>
