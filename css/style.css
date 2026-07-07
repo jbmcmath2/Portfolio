@@ -84,6 +84,13 @@ article{
         margin: 30px;
         padding: 0px 20px 0px 20px;
     }
+     a:link, a:visited, a:active{
+        color: #1cc094;
+    }
+    a:hover{
+        color:#0f6850;
+    }
+
     background-color: #222222;
     border-radius: 50px;
     outline: 5px solid #169976;
