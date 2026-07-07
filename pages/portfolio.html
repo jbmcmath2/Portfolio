@@ -50,11 +50,67 @@
                 <img alt="Project image">
                 <p>This is a project</p>
             </article>
-            <article>
-                <h1>Project Title</h1>
-                <h2>Date</h2>
+            <article id="OilTerrain">
+                <h1>Oil Terrain</h1>
+                <h2>March 2024</h2>
                 <img alt="Project image">
-                <p>This is a project</p>
+                <p>
+                    Upon first joining the Emerging Analytics Center (EAC) my first major project was to recreate and adapt 
+                    an older project called GeoTerrain, a data visualizer built for Microsoft’s HoloLens. The original 
+                    application was made to view a specific terrain model based on data seen in ArcGIS. Together with another 
+                    student, our goal was to bring the same concept to a tablet, the CAVE and the web. In planning and 
+                    developing we asked ourselves important questions, such as: What are the common controls for this 
+                    application across each platform? What will need to change for each port? How can we make each of these 
+                    experiences transferable to each other?
+                </p>
+                <p>
+                    In developing Oil Terrain, we utilized <b>Unity Game Engine</b> for each of the ports of this application, 
+                    we utilized <b>Vuforia</b> packages to create and find image targets for the application to use as an 
+                    anchor for the AR port, and we utilized <b>MiddleVR</b> for our CAVE port. Project management was 
+                    maintained through <b>Jira</b>, code through <b>Sourcetree</b> and <b>Bitbucket</b> and project 
+                    documentation was made using <b>Confluence</b>.
+                </p>
+                <p>
+                    What resulted was three applications each tailored to their respective platform. In our AR version of 
+                    OilTerrain, we made it simple for users to lock onto an image target, where they can view the Terrain 
+                    physically in the world. We made simple UI elements to manipulate the terrain without needing to move 
+                    around the object.
+                </p>
+                <p>
+                    In our CAVE port, we made it possible to view the Terrain data as if the user were physically there. 
+                    Allowing for users to “stand on the shoulders of giants” or view the data like a diorama. We utilized 
+                    the CAVE’s immersive nature to allow for better collaborative settings, and allowed for easier viewing of 
+                    the terrain data utilizing a Vive wand for controls. We implemented many of the same functionalities as 
+                    the AR version, however, added functionalities to cater to the new ways of interacting with the terrain 
+                    that the CAVE offered, such as grabbing the terrain, and spinning it with the wand. 
+                </p>
+                <p>
+                    Finally, we took everything we had built up to that point, and ported it to the web, where you can 
+                    interact with the oil terrain the same way as you could in the AR version, but without the image target 
+                    being required. Utilizing the same functionalities, but with less headache of needing a tablet and a 
+                    printed out version of the image target, or needing the CAVE.
+                </p>
+                <p>
+                    During the development of these projects, we learned a lot about the struggles of porting applications 
+                    to various platforms, how to develop new features for various platform types and honed our knowledge of 
+                    collaborating in Unity development using Sourcetree and Bitbucket. Making new features, particularly for 
+                    the CAVE helped us learn more about developing for VR applications and building for the web helped us 
+                    learn to optimize our work to ensure our application fit within a certain file size.
+                </p>
+                <p>
+                    While Unity was not new to us, MiddleVR, and Vuforia were new and we learned a lot about parsing 
+                    documentation, and creating our own internal documentation regarding ways of integrating tools like 
+                    MiddleVR into specialized environments like the CAVE. These projects also got us more comfortable with 
+                    Unity tools and builds as we worked on making several different versions of the same application, but on 
+                    different platforms. This project also introduced shaders graphs to me, as we created some bounding boxes 
+                    for the CAVE Oil Terrain to keep users from accidentally moving the model or themselves out of view. 
+                </p>
+                <p>
+                    The result of these applications became a primary demonstration pieces for future clients. 
+                    Showcased several times to industry professionals, these applications became working proof of concepts 
+                    for future projects in the CAVE, such as <b><a href="#InsectsVR">InsectsVR</a></b>, 
+                    <b><a href="#CAVEViewer">CAVEViewer</a></b> and <b><a href="#FBXViewer">FBXViewer</a></b>.
+                </p>
             </article>
         </section>
     </main>
