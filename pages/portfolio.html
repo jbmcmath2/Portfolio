@@ -38,6 +38,62 @@
                 <img alt="Project image">
                 <p>This is a project</p>
             </article>
+            <article>
+                <h1>Project Title</h1>
+                <h2>Date</h2>
+                <img alt="Project image">
+                <p>This is a project</p>
+            </article>
+            <article id="FBXViewer">
+                <h1>FBXViewer</h1>
+                <h2>June 2026</h2>
+                <img alt="Project image">
+                <p>
+                    The FBXViewer CAVE application is an expansion on the CAVE Oil Terrain application, focusing on making a 
+                    CAVE application that allows users to load, view and manipulate FBX models on the fly. The FBXViewer 
+                    attempts to remove the need of rebuilding project files to the CAVE. 
+                </p>
+                <p>
+                    The FBXViewer application was developed using <b>Unity Game Engine</b> and <b>MiddleVR</b>’s Unity packages 
+                    to create the CAVE application. The source code was maintained using <b>Github</b> and project management 
+                    was handled through <b>Jira</b>. The development methodology for this project focused on making the 
+                    application work on PC before porting the project over to the CAVE, so we could focus on building the 
+                    on-the-fly FBX loading. 
+                </p>
+                <p>
+                    When development of the project was completed, the FBXViewer was capable of processing an FBX file, 
+                    transforming FBX information into a JSON and a GLB file. Model files can then be added into the CAVE 
+                    application to be interacted with by the user. When processing a model, the application will center the 
+                    model to ensure that it is roughly centered. If the offsets are not quite where a user is wanting, they 
+                    can go into the JSON file and change the transforms, scales and rotations of the model to be where and how 
+                    they want. 
+                </p>
+                <p>
+                    During development, we had to toy with different file conversion methods for on the fly spawning of the 
+                    FBX models. We ended up using GLBs as they load after when used in the context of Unity’s streaming assets 
+                    folder, where files can be added at run-time for the application to then load. We found during development 
+                    that while FBX’s are a native 3D model type for Unity, the file type is not recognized by Unity when placed 
+                    in the streaming assets folder, which caused issues at first, but the GLB conversion was the solution to 
+                    that problem.
+                </p>
+                <p>
+                    Development of the FBXViewer taught me a lot about generating JSON files, using recursive functions in 
+                    large sets of data, and developing functionalities that cross platforms. This project also helped cement 
+                    my knowledge of Git and project management, working with merge conflicts and ways of handling branches.
+                </p>
+                <p>
+                    The project was very successful in what we aimed to do, however it required further future work in order 
+                    to be the fully realized application we had in mind. In the state that we left the project, FBX models 
+                    are able to be generated, and placed into the CAVE application on the fly using GLB files. Models load in, 
+                    and are able to be scaled, moved, rotated and swapped out. However, some models do not initially spawn 
+                    correctly, due to offsets when made in the 3D modeling softwares, and thus require tweaking the JSONs 
+                    occasionally. This can be remedied by an in-application method of saving a model’s current offsets when 
+                    spawned into the CAVE application. Additionally, while the models can be spawned in as a series of parts, 
+                    they do not currently have a method of selecting specific regions. Selecting regions would allow users to 
+                    take models apart, possibly disable certain parts of the model, and manipulate the parts of the model they 
+                    want to change. 
+                </p>
+            </article>
             <article id="StellasDarkSky">
                 <h1>Stella's Dark Sky</h1>
                 <h2>July 2026</h2>
