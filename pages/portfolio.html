@@ -26,17 +26,109 @@
     
     <main>
         <section>
+            <!--
             <article>
                 <h1>Project Title</h1>
                 <h2>Date</h2>
                 <img alt="Project image">
                 <p>This is a project</p>
             </article>
-            <article>
-                <h1>Project Title</h1>
-                <h2>Date</h2>
+            -->
+            <article id="StellasDarkSky">
+                <h1>Stella's Dark Sky</h1>
+                <h2>July 2026</h2>
                 <img alt="Project image">
-                <p>This is a project</p>
+                <p>
+                    The Arkansas Natural Sky Association (ANSA) had a quiz they asked their members and visitors on the causes 
+                    and effects of light pollution that they wanted to be spruced up. I, along with the Emerging Analytics 
+                    Center (EAC), prompted them to make the quiz a game so that younger learners could enjoy the experience 
+                    more, and thus Stella’s Dark Sky was started. The goal was to make a short game with an improved version of 
+                    their quiz at the end. The game needed to cover light pollution and its effects, but in a way that children 
+                    could understand and enjoy.
+                </p>
+                <p>
+                    To create Stella’s Dark Sky I used <b>Unity Game Engine</b>, for development of the game. Sound effects 
+                    created for the game were made using <b>Audacity</b>. The game’s source code was handled through 
+                    <b>Sourcetree/bitbucket</b>. Project management was maintained using <b>Jira</b> for task management and 
+                    <b>Confluence</b> for documentation. 
+                </p>
+                <p>
+                    The completed game is a 2D point and click adventure style game, where you go around finding parts of 
+                    street lamps, learn about light pollution and fix the street lights to be better lighting for the 
+                    environment. When the player completes the lights, they are then given the ANSA quiz on light pollution. 
+                </p>
+                <p>
+                    In development of the game, handling the various states of the lights proved to me a consistent issue. 
+                    When one thing was fixed, another would break, and this became a regular fix. In the end, the lights 
+                    turned out well, but refactoring became regular as certain systems needed to change to fit new needs.
+                </p>
+                <p>
+                    This project taught me a lot about the development life cycle, going from prototype to full version 
+                    proved quite a task for such a small game. This project was one that I led, and had a lot of creative 
+                    control over. While I am proud of all that I was able to accomplish with the project, I certainly see a 
+                    lot of room for growth in a game like this. This project really wrapped all of the learning I had done 
+                    with the EAC into a nice bow, learning not only about development and programming, but project management, 
+                    application design, audio engineering, game testing, bug fixing, and more.
+                </p>
+                <p>
+                    Stella’s Dark Sky was built for the web and placed on the ANSA website for users to play and enjoy. 
+                    While no data has been collected to show the effectiveness of the game and its spreading awareness of light 
+                    pollution, I think the project was still a major success in what we set out to make. It encapsulates the 
+                    ideas of light pollution, and overall is a great experience for young astronomers.
+                </p>
+            </article>
+            <article id="UnityBackupGenerator">
+                <h1>Unity Backup Generator</h1>
+                <h2>June 2026</h2>
+                <img alt="Project image">
+                <p>
+                    The Unity Backup Generator script project came from a need to backup Unity source files as I would 
+                    occasionally forget to backup my files when working on a project, relying only on my Git repositories. 
+                    This script’s goal was to smartly make a copy of my projects folder and back them up to a network storage 
+                    device that was installed in the Emerging Analytics Center’s lab. The script needed to make these copies 
+                    in a way that removed regenerative files (files that are created by Unity automatically) to make the size 
+                    and speed of the copy faster. 
+                </p>
+                <p>
+                    To create this script, I used <b>Powershell</b> to make the script, <b>Window’s Task Scheduler</b> to 
+                    automate the script’s task(s), and <b>GitHub</b> to maintain source code. My IDE of choice for creating 
+                    the script was <b>Visual Studio Code</b>. 
+                </p>
+                <p>
+                    The resulting script allows the user to designate a source and destination folder, where the script will 
+                    run, create a new folder in the destination, create a log called “{todays-date}.txt” where it will 
+                    include all of the steps taken in the copy process. The script will begin to copy the contents of the 
+                    source folder, into the new folder created at the destination. The script will skip certain file types 
+                    and folder names as Unity folders hold regenerative files, for example the Library folder, and when 
+                    complete will mark the start and end time in the log, telling the user that the copy process has been 
+                    completed with statistics about the copy process. 
+                </p>
+                <p>
+                    During development of this script, I found that copying via robocopy can take quite a bit of time. 
+                    While I did not test the speed difference between drag and drop copying versus my scripts copy method, 
+                    however, the automation does help save time as the backup is one less thing to worry about. 
+                </p>
+                <p>
+                    This project taught me a new command in Powershell, and taught me more about how I can utilize Powershell 
+                    to automate routine tasks. I learned a lot about robocopy and the many different ways I can make smart 
+                    copies of folders to avoid unnecessary copying.
+                </p>
+                <p>
+                    The resulting script is a helpful back-up generation script that smartly copies Unity project folders and 
+                    packages them nicely into a destination folder with a log to provide further context to the copy process 
+                    should an issue occur. Having been using this script since I made it, I have found it quite helpful for 
+                    my day to day work, as I don’t have to constantly worry about my project files being backed up. 
+                </p>
+                <p>
+                    Future works on this script could include making the script smarter, having it target only Unity project 
+                    files in case something accidently falls into the projects folder by mistake. Removing old backups after a 
+                    set period of time. Additionally, zipping backups to try and reduce storage needed for backups.
+                </p>
+                <p>
+                    Ultimately, the Unity Backup Generator script has been a very helpful tool and resource, as it allows for 
+                    users to worry less about backing up files, and makes development less risky as you have automatic backups 
+                    to fall back to should new changes cause an issue.
+                </p>
             </article>
             <article id="AutoMinimizer">
                 <h1>AutoMinimizer</h1>
@@ -127,49 +219,6 @@
                     they do not currently have a method of selecting specific regions. Selecting regions would allow users to 
                     take models apart, possibly disable certain parts of the model, and manipulate the parts of the model they 
                     want to change. 
-                </p>
-            </article>
-            <article id="StellasDarkSky">
-                <h1>Stella's Dark Sky</h1>
-                <h2>July 2026</h2>
-                <img alt="Project image">
-                <p>
-                    The Arkansas Natural Sky Association (ANSA) had a quiz they asked their members and visitors on the causes 
-                    and effects of light pollution that they wanted to be spruced up. I, along with the Emerging Analytics 
-                    Center (EAC), prompted them to make the quiz a game so that younger learners could enjoy the experience 
-                    more, and thus Stella’s Dark Sky was started. The goal was to make a short game with an improved version of 
-                    their quiz at the end. The game needed to cover light pollution and its effects, but in a way that children 
-                    could understand and enjoy.
-                </p>
-                <p>
-                    To create Stella’s Dark Sky I used <b>Unity Game Engine</b>, for development of the game. Sound effects 
-                    created for the game were made using <b>Audacity</b>. The game’s source code was handled through 
-                    <b>Sourcetree/bitbucket</b>. Project management was maintained using <b>Jira</b> for task management and 
-                    <b>Confluence</b> for documentation. 
-                </p>
-                <p>
-                    The completed game is a 2D point and click adventure style game, where you go around finding parts of 
-                    street lamps, learn about light pollution and fix the street lights to be better lighting for the 
-                    environment. When the player completes the lights, they are then given the ANSA quiz on light pollution. 
-                </p>
-                <p>
-                    In development of the game, handling the various states of the lights proved to me a consistent issue. 
-                    When one thing was fixed, another would break, and this became a regular fix. In the end, the lights 
-                    turned out well, but refactoring became regular as certain systems needed to change to fit new needs.
-                </p>
-                <p>
-                    This project taught me a lot about the development life cycle, going from prototype to full version 
-                    proved quite a task for such a small game. This project was one that I led, and had a lot of creative 
-                    control over. While I am proud of all that I was able to accomplish with the project, I certainly see a 
-                    lot of room for growth in a game like this. This project really wrapped all of the learning I had done 
-                    with the EAC into a nice bow, learning not only about development and programming, but project management, 
-                    application design, audio engineering, game testing, bug fixing, and more.
-                </p>
-                <p>
-                    Stella’s Dark Sky was built for the web and placed on the ANSA website for users to play and enjoy. 
-                    While no data has been collected to show the effectiveness of the game and its spreading awareness of light 
-                    pollution, I think the project was still a major success in what we set out to make. It encapsulates the 
-                    ideas of light pollution, and overall is a great experience for young astronomers.
                 </p>
             </article>
             <article id="CAVEInsects">
