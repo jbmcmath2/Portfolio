@@ -38,11 +38,46 @@
                 <img alt="Project image">
                 <p>This is a project</p>
             </article>
-            <article>
-                <h1>Project Title</h1>
-                <h2>Date</h2>
+            <article id="AutoMinimizer">
+                <h1>AutoMinimizer</h1>
+                <h2>June 2026</h2>
                 <img alt="Project image">
-                <p>This is a project</p>
+                <p>
+                    The AutoMinimize powershell script came from a need for the CAVE, a VR environment housed in the Emerging 
+                    Analytics Center’s (EAC) lab. As the CAVE is several machines connected together and synced, there are 
+                    daemon processes that run on each of the machines to sync them. The daemon that runs to sync the CAVE 
+                    nodes has a small window that turns on with the CAVE nodes, and was something you had to manually 
+                    minimize. The script was made to remove the need to manually minimize the process window.
+                </p>
+                <p>
+                    To create the AutoMinimize script, I used <b>Windows Powershell</b> to create the script, and used 
+                    <b>Visual Studio Code</b> as my IDE of choice for this program. To fully automate the script I used 
+                    <b>Windows’ Task Scheduler</b> to automatically run the powershell script when the computer(s) start up. 
+                    My source code was maintained using <b>GitHub</b>.
+                </p>
+                <p>
+                    The finalized Powershell script allows the user to target a specific process and when run, will minimize 
+                    the selected process should the script find a process by the inputted name. The script is designed with 
+                    web browsers in mind, as most modern web browsers have many background processes running alongside the 
+                    visual process users typically interact with. This script will target what should be the visible or main 
+                    process to then minimize. 
+                </p>
+                <p>
+                    While creating this Powershell script, I found that the ability to minimize a process is held in a .dll 
+                    file named “user32.dll” I also found out that many of these .dll files are written in C++ but have a C# 
+                    translator specifically to interface with programs like Powershell to make it easier for automation. 
+                </p>
+                <p>
+                    This project taught me a lot about Powershell and making automation scripts. I learned about writing 
+                    Powershell scripts, how to automate those scripts using Task Scheduler, how to find/add functionalities 
+                    to Powershell scripts, and how Powershell and C# interface with one another.
+                </p>
+                <p>
+                    The resulting script is a small but helpful script for minimizing a target process. This script has sped 
+                    up preparation time for CAVE demonstrations making it simpler for CAVE operators. The success of this 
+                    project led me to work on more Powershell automation scripts to automate things around the lab and in my 
+                    work environments. 
+                </p>
             </article>
             <article id="FBXViewer">
                 <h1>FBXViewer</h1>
@@ -55,7 +90,7 @@
                 </p>
                 <p>
                     The FBXViewer application was developed using <b>Unity Game Engine</b> and <b>MiddleVR</b>’s Unity packages 
-                    to create the CAVE application. The source code was maintained using <b>Github</b> and project management 
+                    to create the CAVE application. The source code was maintained using <b>GitHub</b> and project management 
                     was handled through <b>Jira</b>. The development methodology for this project focused on making the 
                     application work on PC before porting the project over to the CAVE, so we could focus on building the 
                     on-the-fly FBX loading. 
