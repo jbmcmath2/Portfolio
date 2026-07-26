@@ -135,6 +135,10 @@ article{
     text-align: center;
 }
 
+#PortfolioHeader{
+    padding-top: 100px;
+}
+
 .thumbnail{
     width: 100%;
     aspect-ratio: 1;
